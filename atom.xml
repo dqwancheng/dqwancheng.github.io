@@ -6,7 +6,7 @@
   <link href="https://www.dqwancheng.cc/atom.xml" rel="self"/>
   
   <link href="https://www.dqwancheng.cc/"/>
-  <updated>2021-02-22T02:30:55.265Z</updated>
+  <updated>2021-02-22T09:55:02.951Z</updated>
   <id>https://www.dqwancheng.cc/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用的Hexo命令</title>
+    <link href="https://www.dqwancheng.cc/2021/02/22/chang-yong-de-hexo-ming-ling/"/>
+    <id>https://www.dqwancheng.cc/2021/02/22/chang-yong-de-hexo-ming-ling/</id>
+    <published>2021-02-22T09:28:25.000Z</published>
+    <updated>2021-02-22T09:55:02.951Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;&lt;h3 id=&quot;1-hexo-n-39-HelloWorld-39&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="https://www.dqwancheng.cc/tags/Hexo/"/>
+    
+    <category term="静态博客" scheme="https://www.dqwancheng.cc/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
