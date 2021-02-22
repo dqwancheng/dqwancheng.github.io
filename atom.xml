@@ -3,11 +3,11 @@
   <title>DQwancheng</title>
   
   
-  <link href="https://www.dqwancheng.cc/atom.xml" rel="self"/>
+  <link href="https://dqwancheng.github.io/atom.xml" rel="self"/>
   
-  <link href="https://www.dqwancheng.cc/"/>
+  <link href="https://dqwancheng.github.io/"/>
   <updated>2021-02-22T02:30:55.265Z</updated>
-  <id>https://www.dqwancheng.cc/</id>
+  <id>https://dqwancheng.github.io/</id>
   
   <author>
     <name>DQ晚成</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://www.dqwancheng.cc/2021/02/22/hello-world/"/>
-    <id>https://www.dqwancheng.cc/2021/02/22/hello-world/</id>
+    <link href="https://dqwancheng.github.io/2021/02/22/hello-world/"/>
+    <id>https://dqwancheng.github.io/2021/02/22/hello-world/</id>
     <published>2021-02-22T02:30:55.264Z</published>
     <updated>2021-02-22T02:30:55.265Z</updated>
     
