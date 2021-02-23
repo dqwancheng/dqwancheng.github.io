@@ -129,6 +129,17 @@
     
   </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/playlist" class="waves-effect waves-light">
+      
+      <i class="fas fa-music" style="zoom: 0.6;"></i>
+      
+      <span>Playlist</span>
+    </a>
+    
+  </li>
+  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -228,6 +239,17 @@
 			    <i class="fa-fw fas fa-address-book"></i>
 			
 			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/playlist" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-music"></i>
+			
+			Playlist
 		</a>
           
         </li>
@@ -865,6 +887,34 @@
                 
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-content article-card-content">
+                        <div class="title center-align" data-aos="zoom-in-up">
+                            <i class="fa fa-address-book"></i>&nbsp;&nbsp;我的简历
+                        </div>
+                        <div id="articleContent" data-aos="fade-up">
+                            <h1 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a>教育经历</h1><ul>
+<li></li>
+</ul>
+<h1 id="获得荣誉"><a href="#获得荣誉" class="headerlink" title="获得荣誉"></a>获得荣誉</h1><ul>
+<li><b>待更……</b></li>
+</ul>
+<h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><ul>
+<li><p><b>电子邮箱</b></p>
+</li>
+<li><p><b>地址</b></p>
+</li>
+<li><p><b>QQ</b></p>
+</li>
+</ul>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
 
@@ -1139,6 +1189,21 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+        <div style="position:fixed;bottom:125px;right:16px;cursor: pointer;">
+            <div class="ih-item circle colored effect19" id="Div_tuxiaochao">
+                <a title="兔小巢" target="_blank" rel="noopener" href="https://support.qq.com/products/311518">
+                    <!--<i class="fa fa-heart fa-3x fa-TencentComment fa-img"  aria-hidden="true"></i>-->
+                    <div class="fa-img">
+                        <img src="../medias/Tencent_Comments.png" class="fa-TencentComment" id="fa-TencentComment" alt="img">
+                    </div>
+                    <div class="fa-info">
+                        <h3>Comments</h3>
+                        <p>欢迎大家来这里反馈！</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
     
 
     
@@ -1150,6 +1215,66 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
+
+        
+    <!--天气接口控件 DQwancheng 2021-2-23-->
+    
+        <!--天气接口 DQwancheng 2021-2-23-->
+<!--旧接口
+<style type="text/css">
+  #weather-float-he {
+    position: absolute;
+    z-index: 9999;
+    padding: 0px;
+    top: 8px;
+    left: 8px;
+  }
+</style>
+<script type="text/javascript">
+	WIDGET = {FID: '1tFpFZ5Mtj'}
+</script>
+<script type="text/javascript"> //只在桌面版网页启用特效 
+var windowWidth = $(window).width();
+if (windowWidth > 768) { 
+	document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>'); } 
+</script>
+-->
+
+<div id="he-plugin-simple"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "modules": "01234",
+    "background": 5,
+    "tmpColor": "FFFFFF",
+    "tmpSize": 16,
+    "cityColor": "FFFFFF",
+    "citySize": 16,
+    "aqiSize": 16,
+    "weatherIconSize": 24,
+    "alertIconSize": 18,
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": 5,
+    "fixed": "true",
+    "vertical": "middle",
+    "horizontal": "center",
+    "key": "51aa3d7526004278be89051e941570fb"
+  }
+}
+</script>
+
+<script type="text/javascript"> //只在桌面版网页启用特效 
+var windowWidth = $(window).width(); 
+if (windowWidth > 768) { 
+	document.write('<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"><\/script>'); 
+}
+</script>
+
+
+    
+
 
 </body>
 
