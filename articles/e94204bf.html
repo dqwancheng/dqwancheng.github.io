@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, DQwancheng">
+    <meta name="keywords" content="常用的Hexo命令, DQwancheng">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | DQwancheng</title>
+    <title>常用的Hexo命令 | DQwancheng</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -333,12 +333,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">常用的Hexo命令</h1>
                 </div>
             </div>
         </div>
@@ -452,9 +452,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hexo/">
+                                <span class="chip bg-color">Hexo</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">静态博客</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -480,7 +488,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    478
                 </div>
                 
 
@@ -510,19 +518,57 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="1-hexo-n-39-HelloWorld-39"><a href="#1-hexo-n-39-HelloWorld-39" class="headerlink" title="1. hexo n &#39;HelloWorld&#39;"></a>1. <code>hexo n &#39;HelloWorld&#39;</code></h3><ul>
+<li>作用：新建一个 HelloWorld.md 的博客文章</li>
+<li>另：<code>hexo n draft &#39;草稿&#39;</code>创建一个草稿文档，不会出现在博客上<ul>
+<li>使用<code>hexo publish &#39;草稿&#39;</code>发布为正式文章</li>
+</ul>
+</li>
+<li>附：<code>hexo n page &#39;&#39;</code>新建页面</li>
+</ul>
+<h3 id="2-hexo-g"><a href="#2-hexo-g" class="headerlink" title="2. hexo g"></a>2. <code>hexo g</code></h3><ul>
+<li>作用：自动生成网站静态文件到public目录下，便于查看网站生成的静态文件或者手动部署网站</li>
+<li>注意：如果使用自动部署，不需要先执行该命令</li>
+</ul>
+<h3 id="3-hexo-s"><a href="#3-hexo-s" class="headerlink" title="3. hexo s"></a>3. <code>hexo s</code></h3><ul>
+<li><p>作用：启动本地服务器，用于预览主题。默认地址：<code> http://localhost:4000/</code>，预览的同时可以修改文章内容或主题代码，保存后刷新页面即可。</p>
+</li>
+<li><p>注意：对Hexo根目录 <code>_config.yml</code> 的修改，需要重启本地服务器后才能预览效果。</p>
+</li>
+<li><p>另：预览草稿文章 <code>hexo s --drafts</code></p>
+</li>
+</ul>
+<h3 id="4-hexo-d"><a href="#4-hexo-d" class="headerlink" title="4. hexo d"></a>4. <code>hexo d</code></h3><ul>
+<li>作用：自动生成网站静态文件，并部署到设定的仓库</li>
+</ul>
+<h3 id="5-hexo-clean"><a href="#5-hexo-clean" class="headerlink" title="5. hexo clean"></a>5. <code>hexo clean</code></h3><ul>
+<li>作用：清除缓存文件<code>db.json</code>和已生成的静态文件 public目录，一般在网站出现异常时使用</li>
+</ul>
+<h3 id="6-设置文章摘要"><a href="#6-设置文章摘要" class="headerlink" title="6. 设置文章摘要"></a>6. 设置文章摘要</h3><pre class="line-numbers language-none"><code class="language-none">以上是文章摘要
+&lt;!--more--&gt;
+以下是余下全文 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="http://dqwcpics1.oss-cn-zhangjiakou.aliyuncs.com/img/%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="效果图"></p>
+<h2 id="常见命令"><a href="#常见命令" class="headerlink" title="常见命令"></a>常见命令</h2><pre class="line-numbers language-hexo" data-language="hexo"><code class="language-hexo">hexo new &quot;postName&quot; # 新建文章
+hexo new page &quot;pageName&quot; # 新建页面
+hexo generate # 生成静态页面至public目录
+hexo server # 开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）监视文件变动并自动更新，无需重启服务器
+hexo server -p 5000 # 更改端口
+hexo server -i 192.168.1.1 # 自定义 IP
+hexo deploy # 部署到GitHub
+hexo help  # 查看帮助
+hexo version  # 查看Hexo的版本
+hexo init  # 初始化<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h3><pre class="line-numbers language-none"><code class="language-none">hexo n &#x3D;&#x3D; hexo new
+hexo p &#x3D;&#x3D; hexo publish
+hexo g &#x3D;&#x3D; hexo generate
+hexo s &#x3D;&#x3D; hexo server
+hexo d &#x3D;&#x3D; hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><pre class="line-numbers language-none"><code class="language-none">hexo s -g #生成并本地预览
+hexo d -g #生成并上传<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
             </div>
@@ -549,7 +595,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.dqwancheng.cc/2021/02/22/hello-world/">https://www.dqwancheng.cc/2021/02/22/hello-world/</a>
+                    <a href="https://www.dqwancheng.cc/articles/e94204bf.html">https://www.dqwancheng.cc/articles/e94204bf.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -586,7 +632,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Hexo/">
+                                    <span class="chip bg-color">Hexo</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">静态博客</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1022,11 +1076,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/22/chang-yong-de-hexo-ming-ling/">
+                <a href="/articles/e94204bf.html">
                     <div class="card-image">
                         
                         
@@ -1042,9 +1097,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1053,6 +1108,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1072,10 +1128,10 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/22/hello-world/">
+                <a href="/articles/4a17b156.html">
                     <div class="card-image">
                         
                         
@@ -1102,7 +1158,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
