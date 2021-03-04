@@ -65,34 +65,35 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/archives" class="waves-effect waves-light">
+
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
       <span>归档</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/tags">
+          
+          <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Tags</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories">
+          
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Categories</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
@@ -131,11 +132,11 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/playlist" class="waves-effect waves-light">
+    <a href="/navigation" class="waves-effect waves-light">
       
-      <i class="fas fa-music" style="zoom: 0.6;"></i>
+      <i class="fa fa-rocket" style="zoom: 0.6;"></i>
       
-      <span>Playlist</span>
+      <span>Navigation</span>
     </a>
     
   </li>
@@ -179,34 +180,36 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/tags" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
+				<i class="fa-fw fas fa-archive"></i>
 			
 			归档
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/tags " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Tags</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/categories " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Categories</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -245,11 +248,11 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/playlist" class="waves-effect waves-light">
+		<a href="/navigation" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-music"></i>
+			    <i class="fa-fw fa fa-rocket"></i>
 			
-			Playlist
+			Navigation
 		</a>
           
         </li>
@@ -355,9 +358,17 @@
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
+                                "Not everything is meant to be. But everything is worth a try.",
+                            
+                                "不是每件事都注定会成功，但是每件事都值得一试",
+                            
+                                "Never really desperate, only the lost of the soul.",
+                            
                                 "从来没有真正的绝境, 只有心灵的迷途",
                             
-                                "Never really desperate, only the lost of the soul",
+                                "To watch the sunrise must wait till dawn.",
+                            
+                                "要看日出必须守到拂晓",
                             
                         ],
                         startDelay: 300,
@@ -561,7 +572,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02"]
+            data: ["2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03"]
         },
         yAxis: {
             type: 'value',
@@ -571,7 +582,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,0,0,0,0,0,0,0,0,0,0,2,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -877,8 +888,12 @@
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">DQ晚成</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a> -->
+            <span class="with-love" id="heart">
+                <i class="fa fa-heart" style="color:#ff71a8"></i>
+            </span>
+            <span>欢迎访问本站！</span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
