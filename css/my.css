@@ -424,6 +424,8 @@
 
     .ih-item .fa-info {
         visibility: hidden;
+        width: 0px;
+        height: 0px;
     }
 
 }
