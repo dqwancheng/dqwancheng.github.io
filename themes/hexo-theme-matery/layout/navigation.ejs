@@ -1,0 +1,67 @@
+<style>
+
+	@import url(/css/style.css);
+		@import url(/css/search.css);
+		.icon {
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: -0.35em;
+        fill: currentColor;
+        overflow: hidden;
+        padding: 0 5px 0 7px;
+    }
+    .search_text {
+    	position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 300px;
+    }
+    .bg-cover {
+    	height: 0;
+    }
+    .navbar-fixed {
+    	background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    	/*opacity: 0.9;*/
+    }
+    #Div_tuxiaochao_main {
+    	visibility: hidden;
+    }
+</style>
+<%- partial('_partial/bg-cover') %>
+
+<main>
+
+<script>
+  // 计算页面的实际高度，iframe自适应会用到
+  function calcPageHeight(doc) {
+      var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight)
+      var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight)
+      var height  = Math.max(cHeight, sHeight)
+      return height
+  }
+  //根据ID获取iframe对象
+  var ifr = document.getElementById('main1')
+  ifr.onload = function() {
+  	  //解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
+  	  ifr.style.height='0px';
+      var iDoc = ifr.contentDocument || ifr.document
+      var height = calcPageHeight(iDoc)
+      if(height < 850){
+      	height = 850;
+      }
+      ifr.style.height = height + 'px'
+  }
+</script>
+<div style="margin-top:64px;">
+<!-- <div style="background-color: #222d46; color: #ffffff">
+	<br>
+	iframe调用搜索页面：https://so.baideye.com/
+	<br>
+	<br>
+</div> -->
+</div>
+<div class="main_page" style="">
+	 <iframe scrolling="no" id="main1" name="main1" frameborder="0"  src="http://1.15.91.151:600" 
+        style="min-height:770px;width:100%;height:100%;"></iframe>
+</div>
+</main>
