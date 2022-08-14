@@ -123,7 +123,7 @@ deploy:
   type: git
   repository: https://github.com/dqwancheng/dqwancheng.github.io
   branch: main
-  token: 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
+
 
 search:
   path: search.xml
